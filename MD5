@@ -1,0 +1,9 @@
+4978b1c031795a9f75771263e7dbdca7 *DESCRIPTION
+65a062df238256d16fd5604e13ae2c29 *NAMESPACE
+d21e590bf7c023060e9e75011416bafc *R/sourceCodeYuimaGUI.R
+f509c6199e29044dc66f5ab35284daad *inst/yuimaGUI/global.R
+95852705fcc1bdc6f6af6b483bb227a5 *inst/yuimaGUI/server.R
+870e7d29347e6ccafe25efcfe5afcc7b *inst/yuimaGUI/ui.R
+faaed1dc5e29be835a4015e7683e191a *inst/yuimaGUI/www/custom.css
+3f9406df96415350954a74a33f2c2963 *inst/yuimaGUI/www/example.jpg
+ed1f5024f6504ca8b493643e022fa723 *man/yuimaGUI.Rd
