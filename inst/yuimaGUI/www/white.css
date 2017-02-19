@@ -1,17 +1,15 @@
-.skin-blue .main-header .logo {
-                              background-color: black;
-                              }
-.skin-blue .main-header .navbar {
-                              background-color: black;
-                              }   
-.skin-blue .main-sidebar {
-                              background-color: black;
-                              font-family: "Times New Roman", Times, serif;
-                              }
-.content-wrapper, .right-side {
-                              background-color:  #282828;
-                              }
-                              
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+a:link, a:visited, a:active {
+    color: blue;
+}
+
+a:hover {
+    color: #f076eb;
+}
 
 tr{
   background-color: #dddcdc;
@@ -24,6 +22,76 @@ th{
   background-color: #BDC9BD;
   color: black;
 }
+
+.skin-blue .main-sidebar {
+                              background-color: black;
+                              font-family: "Times New Roman", Times, serif;
+                              }
+                              
+.content-wrapper, .right-side {
+                              background-color: #f0f4f5;
+                              }
+
+.hTitle {
+  color: black;
+  font-weight: bold;
+}
+
+.hModal {
+  color: black;
+}
+
+.modal-title {
+  color: black;
+  font-size: 150%;
+  text-align: center;
+} 
+
+.modal-body .shiny-input-container{
+  font-family: Georgia, sans-serif;
+  color: black;
+}
+
+.hrHeader{
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: blue;
+    text-align: center;
+    border-color: #c0afaf;
+}
+
+.hrHeader:after {
+    content: '\00A7';
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+}
+
+
+.progress {
+  width: 100%;
+  background-color: black;
+	border-radius: .7em;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.irs-max, .irs-min {display: none;}
+.irs-single, .irs-from, .irs-to, .irs-bar-edge, .irs-bar {
+  background: black;
+  border-color: black;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+#sessionButtons {
+  text-align: center;
+}
+
 
 #symb {
   text-align: left;
@@ -39,7 +107,7 @@ th{
 	background: linear-gradient(#606D60, #202220, #606D60);
 }
 
-#advancedSettingsButtonApplyDelta, #advancedSettingsButtonApplyAllDelta, #advancedSettingsButtonApplyModel, #advancedSettingsButtonApplyAllModel, #advancedSettingsButtonApplyGeneral, #advancedSettingsButtonApplyAllModelGeneral, #advancedSettingsButtonApplyAllGeneral, #buttonApplyRange, #buttonApplyAllRange, #simulate_button_apply_nsim, #simulate_button_applyAll_nsim, #simulate_button_apply_xinit, #simulate_button_applyAll_xinit, #simulate_button_apply_range, #simulate_button_applyAll_range, #simulate_button_apply_advancedSettings, #simulate_button_applyAll_advancedSettings, #parametric_modal_button_applyDelta, #parametric_modal_button_applyAllDelta, #parametric_modal_button_applyGeneral, #parametric_modal_button_applyAllModelGeneral, #parametric_modal_button_applyModel, #parametric_modal_button_applyAllModel {
+#advancedSettingsButtonApplyDelta, #advancedSettingsButtonApplyAllDelta, #advancedSettingsButtonApplyModel, #advancedSettingsButtonApplyAllModel, #advancedSettingsButtonApplyGeneral, #advancedSettingsButtonApplyAllModelGeneral, #advancedSettingsButtonApplyAllGeneral, #buttonApplyRange, #buttonApplyAllRange, #simulate_button_apply_nsim, #simulate_button_applyAll_nsim, #simulate_button_apply_xinit, #simulate_button_applyAll_xinit, #simulate_button_apply_range, #simulate_button_applyAll_range, #simulate_button_apply_advancedSettings, #simulate_button_applyAll_advancedSettings, #parametric_modal_button_applyDelta, #parametric_modal_button_applyAllDelta, #parametric_modal_button_applyGeneral, #parametric_modal_button_applyAllModelGeneral, #parametric_modal_button_applyModel, #parametric_modal_button_applyAllModel, #parametric_buttonApplyRange, #parametric_buttonApplyAllRange {
   width: 100%;
   color: #ffffff;
 	text-shadow: 1px 1px 1px #000;
@@ -77,7 +145,7 @@ th{
 }
 
 
-#DisplayPlotsRange, #simulate_button_setSimulation {
+#DisplayPlotsRange, #simulate_button_setSimulation, #parametric_button_setRange {
   width: 40%;
   height: 39px;
   color: #ffffff;
@@ -85,7 +153,7 @@ th{
 	background: linear-gradient(#202220, #159609, #202220);
 }
 
-#advancedSettingsButton, #simulate_button_advancedSettings, #hedging_button_commissionPlan, #parametric_button_settings {
+#advancedSettingsButton, #simulate_button_advancedSettings, #parametric_button_settings {
   width: 50%;
   height: 39px;
   color: #ffffff;
@@ -115,40 +183,9 @@ th{
 	background: linear-gradient(#606D60, #202220, #606D60);
 }
 
-.shiny-input-container{
-  color: #CDCECD;
-  font-family: Georgia, sans-serif;
-}
-
-.progress {
-  width: 100%;
-  background-color: black;
-	border-radius: .7em;
-}
-
-
-a:link, a:visited, a:active {
-    color: #53ea7c;
-}
-
-a:hover {
-    color: #f076eb;
-}
-
-.shiny-output-error-myclass{
-  font-size: 150%;
-  text-align: center;
-  color: #dd4924;
-}
-
-.shiny-output-error-myclass_notification{
-  font-size: 150%;
-  text-align: center;
-  color: #40d067;
-}
 
 #yourFilePreviewText{
-  color: #CDCECD;
+  color: black;
   font-size: 3em;
   font-family: Goudy Old Style, Serif;
 }
@@ -158,54 +195,30 @@ a:hover {
   font-family: Goudy Old Style, Serif;
 }
 
-#hedging_probability_text, #hedging_mean_text, #hedging_capital_text, #hedging_meanPerc_text {
+#hedging_capital_text {
   font-size: 125%;
   font-family: Goudy Old Style, Serif;
-  color: #edeeed;
+  color: black;
 }
 
-.hrHeader{
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #edeeed;
-    text-align: center;
-    border-color: #c0afaf;
-}
-
-.hrHeader:after {
-    content: '\00A7';
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: #282828;
-}
 
 #SymbolName{
   font-size: 160%;
-  color: #CDCECD;
+  color: black;
   font-weight: bold;
   
 }
 
 #PrintModelLatex, #estimatedModelsLatex, #usr_modelClass_latex, #usr_model_saved_latex, #simulate_PrintModelLatex{
   font-size: 125%;
-  color: #CDCECD;
+  color: black;
 }
 
 #estimatedModelsTable{
   font-size: 110%;
 }
 
-.dataTables_filter label {
-    color: #CDCECD;
-}
 
-.dataTables_filter input {
-    color: black;
-}
 
 
 #llag_maxLag, #changepoint_pvalue, #cluster_distance_minkowskiPower {
@@ -213,7 +226,7 @@ a:hover {
 }
 
 
-#simulate_monitor_button_showSimulation, #databaseModels_button_showResults {
+#simulate_monitor_button_showSimulation, #databaseModels_button_showResults, #hedging_button_show {
   color: #ffffff;
 	background: radial-gradient(#662900, #ff8533, #662900);
 	font-size: 110%;
@@ -224,12 +237,17 @@ a:hover {
   font-size: 120%;
 }
 
-.form-control {
-  text-align: center;
+#saveSession, #loadSession {
+  color: black;
 }
 
-#parametric_modal_rangeFraction .js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {
-  background: #878792;
-  border-color: #282828;
+.js-irs-2 .irs-from, .js-irs-2 .irs-to, .js-irs-2 .irs-bar-edge, .js-irs-2 .irs-bar {
+  background: #f0f4f5;
+  border-color: #f0f4f5;
+  font-family: "Times New Roman", Georgia, Serif;
+  color: black;
 }
 
+#hedging_modal_id_hidden {
+  visibility: hidden;
+}
