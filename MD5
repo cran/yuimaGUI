@@ -1,10 +1,10 @@
-0f8c207bbe46c15d763ae19919c194f5 *DESCRIPTION
-65a062df238256d16fd5604e13ae2c29 *NAMESPACE
+d53834396c6c6f23ae2fb7f33e56a311 *DESCRIPTION
+dcdb73be1dff1acb13a0e032291cc789 *NAMESPACE
 683ba4605007066b4513e0bb0f1c2477 *R/sourceCodeYuimaGUI.R
 b08352836893a138e03a43e1a9b54d3a *inst/yuimaGUI/global.R
-0a8a8071f759b22bebdc0fcb7cf88b3d *inst/yuimaGUI/server.R
-e63acb2dcdcdaf4bddf72327a5bdeeeb *inst/yuimaGUI/ui.R
-9c35ef7a03977a0ef32f646fd6e6b3b3 *inst/yuimaGUI/www/black.css
+3e6df6dab16084ecba9c6f64beee8adc *inst/yuimaGUI/server.R
+982193f5b3b5525cc6c1616a1c4b2217 *inst/yuimaGUI/ui.R
+532ed6b2b8631e201cd7b61ff1cbe2be *inst/yuimaGUI/www/black.css
 6fdb7cd474d9298b5819bb9feb75f01d *inst/yuimaGUI/www/example.jpg
-cce92d39536279c3e8eff0c6840e011f *inst/yuimaGUI/www/white.css
+2af724b8b489446c3e6c40289576b00e *inst/yuimaGUI/www/white.css
 878e4201ba2123f9865002ab6142337f *man/yuimaGUI.Rd
