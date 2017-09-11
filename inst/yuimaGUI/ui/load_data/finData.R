@@ -11,7 +11,7 @@ tabItem(tabName="finData",
                     "Economic series are available from ",a("Federal Reserve Bank of St. Louis", href="https://research.stlouisfed.org/fred2/", target = "_blank"), ".",
                     "Follow this ", a("example",href="example.jpg", target = "_blank"), " to find the symbols.",
                     br(),
-                    "Multiple symbols are allowed if divided byempty spaces and/or commas (e.g. AAPL FB CSCO or AAPL,FB,CSCO)."),
+                    "Multiple symbols are allowed if divided by empty spaces and/or commas (e.g. AAPL FB CSCO or AAPL,FB,CSCO)."),
                  hr(class = "hrHeader")
           )
         ),
