@@ -110,16 +110,15 @@ th{
   text-align: center;
 }
 #loadSession{
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
 #theyuimaprojct{
-  margin-top: 100px;
   text-align: center;
 }
 #theyuimaprojct a {
-  color:green;
+  color:orange;
 }
 
 

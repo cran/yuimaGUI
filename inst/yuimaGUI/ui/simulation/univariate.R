@@ -4,9 +4,9 @@ tabItem(tabName = "simulate",
                  h3("Univariate Simulation",class = "hTitle"),
                  h4("Select the estimated models you wish to simulate.",
                     br(),
-                    "If you want to simulate a model that has not been estimated, you can use the 'Non-estimated models' tab.",
+                    "If you want to simulate a model that has not been estimated, you can use the Non-estimated models tab.",
                     br(),
-                    "Click on the 'Set Simulation' and 'Advanced Settings' buttons to customize the simulation process."),
+                    "Click on the Set Simulation and Advanced Settings buttons to customize the simulation process."),
                  hr(class = "hrHeader")
           )
         ),
@@ -35,7 +35,7 @@ tabItem(tabName = "simulate",
                                                   column(6, br(), div(align="center",
                                                                       fluidRow(
                                                                         column(1),
-                                                                        column(5,selectInput("simulate_model_usr_selectClass", label = "Class", choices = c("Diffusion process", "Fractional process", "Compound Poisson"))),
+                                                                        column(5,selectInput("simulate_model_usr_selectClass", label = "Class", choices = c("Diffusion process", "Fractional process", "Compound Poisson", "Point Process"))),
                                                                         column(5,uiOutput("simulate_model_usr_selectModel"))
                                                                       ),
                                                                       uiOutput("simulate_model_usr_ID"),
