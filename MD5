@@ -1,6 +1,9 @@
-51d41bf0c2e7db74f6c2b8b5f8a21152 *DESCRIPTION
-8f811b098d691c8be47c0263d2e65969 *NAMESPACE
-683ba4605007066b4513e0bb0f1c2477 *R/sourceCodeYuimaGUI.R
+2f7522243ff4e3c414f88f85a73a7ddf *DESCRIPTION
+3c18a095fb6ae2134429b6a4838824b9 *NAMESPACE
+7c35d7ae41fe5f28f74303b314628e80 *R/sourceCodeYuimaGUI.R
+ba391af8d40ef453c6d0a726d4170ffa *inst/AUTHORS
+7f3004dc4a77671f30f8216a6c34baa2 *inst/CITATION
+cd8687c920284fc3afb12b9638fa70d2 *inst/COPYRIGHTS
 48240555bf43a42c116c7916a1eb0e00 *inst/yuimaGUI/global.R
 4ed6fa38a6709d72055cea6b621df512 *inst/yuimaGUI/server.R
 4362a6a885b86c5f96ec5bd15c7a507d *inst/yuimaGUI/server/eda/changepoint_non_parametric.R
@@ -40,4 +43,4 @@ c73d148b1d622051e0859020c105ca88 *inst/yuimaGUI/www/black.css
 6fdb7cd474d9298b5819bb9feb75f01d *inst/yuimaGUI/www/example.jpg
 642aacada2065c0e9eacae0f2b9e6d5c *inst/yuimaGUI/www/white.css
 adffa89f4e93e6422243c97549675aa8 *inst/yuimaGUI/www/yuimaLogo.ico
-878e4201ba2123f9865002ab6142337f *man/yuimaGUI.Rd
+c953e15f79507e13dbfae67db856f936 *man/yuimaGUI.Rd
