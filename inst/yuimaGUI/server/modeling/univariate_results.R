@@ -1,5 +1,5 @@
 ###Display estimated models
-output$databaseModels <- DT::renderDataTable(options=list(scrollY = 200, scrollCollapse = FALSE, deferRender = FALSE, dom = 'frtS'), extensions = 'Scroller', rownames = TRUE, selection = "single",{
+output$databaseModels <- DT::renderDataTable(options=list(scrollY = 200, scrollCollapse = FALSE, deferRender = TRUE, scroller = TRUE, dom = 'frtS'), extensions = 'Scroller', rownames = TRUE, selection = "single",{
   if (length(yuimaGUItable$model)==0){
     NoData <- data.frame("Symb"=NA,"Here will be stored models you estimate in the previous tabs"=NA, check.names = FALSE)
     return(NoData[-1,])
@@ -31,6 +31,7 @@ output$SymbolName <- renderText({
 
 ###More Info
 output$text_MoreInfo <- renderUI({
+  if(length(yuimaGUItable$model) == 0 | is.null(rowToPrint$id)) return(NULL)
   id <- unlist(strsplit(rownames(yuimaGUItable$model)[rowToPrint$id], split = " "))
   info <- yuimaGUIdata$model[[id[1]]][[as.numeric(id[2])]]$info
   div(
@@ -52,8 +53,10 @@ output$text_MoreInfo <- renderUI({
     align="center"
   )
 })
+outputOptions(output, "text_MoreInfo", suspendWhenHidden = FALSE)
 
 output$table_MoreInfo <- renderTable(digits=5, rownames = TRUE, {
+  if(length(yuimaGUItable$model) == 0 | is.null(rowToPrint$id)) return(NULL)
   id <- unlist(strsplit(rownames(yuimaGUItable$model)[rowToPrint$id], split = " "))
   info <- yuimaGUIdata$model[[id[1]]][[as.numeric(id[2])]]$info
   if (info$class=="Fractional process") coef <- as.data.frame(yuimaGUIdata$model[[id[1]]][[as.numeric(id[2])]]$qmle)
@@ -77,7 +80,7 @@ output$table_MoreInfo <- renderTable(digits=5, rownames = TRUE, {
                        "start", "startMin", "startMax", "lower", "upper")
   return(t(table))
 })
-
+outputOptions(output, "table_MoreInfo", suspendWhenHidden = FALSE)
 
 ###Print estimates
 observe({
@@ -114,6 +117,7 @@ observe({
       selectInput("model_modal_model_id", label = "Model ID", choices = choices)
     }
   })
+  outputOptions(output, "model_modal_model_id", suspendWhenHidden = FALSE)
 })
 
 observe({
@@ -160,7 +164,7 @@ observeEvent(input$model_modal_model_id,{
         })
         ksTest <- try(ks.test(x = as.numeric(z$V1), "pnorm"))
         output$model_modal_plot_test <- renderUI({
-          if(class(ksTest)!="try-error")
+          if(!"try-error" %in% class(ksTest))
             HTML(paste("<div><h5 class='hModal'>Kolmogorov-Smirnov p-value (the two distributions coincide): ", format(ksTest$p.value, scientific=T, digits = 2), "</h5></div>"))
         })
       }
@@ -262,7 +266,7 @@ observeEvent(input$model_modal_model_id,{
           })
           ksTest <- try(do.call(what = 'ks.test', args = append( list(x = as.numeric(dx$V1), y = pfun), lapply(args, FUN = function(x) x)) ))
           output$model_modal_plot_test <- renderUI({
-            if(class(ksTest)!="try-error")
+            if(!"try-error" %in% class(ksTest))
               HTML(paste("<div><h5 class='hModal'>Kolmogorov-Smirnov p-value (the two distributions coincide): ", format(ksTest$p.value, scientific=T, digits = 2), "</h5></div>"))
           }) 
         }

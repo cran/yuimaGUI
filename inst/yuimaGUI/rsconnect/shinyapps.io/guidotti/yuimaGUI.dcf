@@ -1,0 +1,12 @@
+name: yuimaGUI
+title: yuimaGUI
+username: guidotti
+account: guidotti
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 343548
+bundleId: 11698788
+url: https://guidotti.shinyapps.io/yuimaGUI/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
